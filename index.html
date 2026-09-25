@@ -6,7 +6,7 @@
     <title>Local LLM Hosting 03 — Inside vLLM, PagedAttention & Continuous Batching</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;700&family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@400;500;600;700&family=Instrument+Sans:ital,wght@0,400;0,500;0,600;0,700;1,400;1,700&family=Geist+Mono:ital,wght@0,400;0,500;0,600;0,700;1,400;1,700&display=swap" rel="stylesheet">
     <style>
         :root {
             --bg-primary: #1c1815;
@@ -18,9 +18,9 @@
             --accent-dim: #aabd5944;
             --accent-glow: #aabd5933;
             --border: #3a322b;
-            --font-display: 'Space Grotesk', sans-serif;
-            --font-mono: 'JetBrains Mono', 'Fira Code', monospace;
-            --font-body: 'Inter', sans-serif;
+            --font-display: 'Bricolage Grotesque', sans-serif;
+            --font-mono: 'Geist Mono', 'Geist Mono', monospace;
+            --font-body: 'Instrument Sans', sans-serif;
             --max-width: 900px;
         }
 
@@ -845,9 +845,9 @@
                 .slab  { fill: #2b2520; stroke: #463e36; }
                 .used  { fill: rgba(170,189,89,0.45); stroke: #aabd59; }
                 .waste { fill: rgba(222,128,90,0.25); stroke: #de805a; }
-                .t     { fill: #efe8dc; font-family: 'JetBrains Mono', monospace; font-size: 11px; }
-                .dim   { fill: #a2978b; font-family: 'JetBrains Mono', monospace; font-size: 11px; }
-                .h     { fill: #aabd59; font-family: 'Space Grotesk', sans-serif; font-weight: 600; font-size: 13px; }
+                .t     { fill: #efe8dc; font-family: 'Geist Mono', monospace; font-size: 11px; }
+                .dim   { fill: #a2978b; font-family: 'Geist Mono', monospace; font-size: 11px; }
+                .h     { fill: #aabd59; font-family: 'Bricolage Grotesque', sans-serif; font-weight: 600; font-size: 13px; }
             </style>
             <text x="10"  y="18" class="h">Naive contiguous KV allocation &mdash; 4 sessions, max_ctx=2048, actual use varies</text>
 
@@ -909,10 +909,10 @@
                 .sh    { fill: rgba(170,189,89,0.45); stroke: #aabd59; }
                 .sA    { fill: rgba(215,187,223,0.35); stroke: #d7bbdf; }
                 .sB    { fill: rgba(227,177,116,0.35); stroke: #e3b174; }
-                .lbl   { fill: #efe8dc; font-family: 'JetBrains Mono', monospace; font-size: 10px; }
-                .dim   { fill: #a2978b; font-family: 'JetBrains Mono', monospace; font-size: 10px; }
+                .lbl   { fill: #efe8dc; font-family: 'Geist Mono', monospace; font-size: 10px; }
+                .dim   { fill: #a2978b; font-family: 'Geist Mono', monospace; font-size: 10px; }
                 .arr   { stroke: #aabd59; stroke-width: 1; fill: none; marker-end: url(#m); }
-                .h     { fill: #aabd59; font-family: 'Space Grotesk', sans-serif; font-weight: 600; font-size: 13px; }
+                .h     { fill: #aabd59; font-family: 'Bricolage Grotesque', sans-serif; font-weight: 600; font-size: 13px; }
             </style>
             <defs>
                 <marker id="m" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
@@ -1057,8 +1057,8 @@
                 .s3 { fill: rgba(227,177,116,0.4); stroke: #e3b174; }
                 .s4 { fill: rgba(188,219,212,0.4); stroke: #bcdbd4; }
                 .wait { fill: #3a322b; stroke: #463e36; }
-                .t { fill: #efe8dc; font-family: 'JetBrains Mono', monospace; font-size: 10px; }
-                .h { fill: #aabd59; font-family: 'Space Grotesk', sans-serif; font-weight: 600; font-size: 13px; }
+                .t { fill: #efe8dc; font-family: 'Geist Mono', monospace; font-size: 10px; }
+                .h { fill: #aabd59; font-family: 'Bricolage Grotesque', sans-serif; font-weight: 600; font-size: 13px; }
             </style>
 
             <!-- static -->
@@ -1141,8 +1141,8 @@
                 .big   { fill: rgba(170,189,89,0.4); stroke: #aabd59; }
                 .ok    { fill: #aabd59; }
                 .bad   { fill: #de805a; }
-                .t { fill: #efe8dc; font-family: 'JetBrains Mono', monospace; font-size: 11px; }
-                .h { fill: #aabd59; font-family: 'Space Grotesk', sans-serif; font-weight: 600; font-size: 13px; }
+                .t { fill: #efe8dc; font-family: 'Geist Mono', monospace; font-size: 11px; }
+                .h { fill: #aabd59; font-family: 'Bricolage Grotesque', sans-serif; font-weight: 600; font-size: 13px; }
             </style>
             <text x="10" y="18" class="h">Draft 5 tokens, verify in parallel, accept the longest matching prefix.</text>
 
